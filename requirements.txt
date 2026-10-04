@@ -1,0 +1,16 @@
+# Core training and inference versions from the author's supplied environment.
+# Install a PyTorch build appropriate for your CPU/CUDA platform if needed.
+torch==2.8.0
+transformers==4.57.1
+numpy==2.3.2
+tqdm==4.66.2
+matplotlib==3.10.5
+
+# Auxiliary data-processing and plotting scripts.
+jsonlines==4.0.0
+pandas
+seaborn
+
+# Optional augment_cmeee.py (DashScope API) scripts.
+dashscope
+tenacity
