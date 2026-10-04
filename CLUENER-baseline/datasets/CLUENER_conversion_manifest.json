@@ -1,0 +1,107 @@
+{
+  "dataset_name": "CLUENER",
+  "timestamp_utc": "2026-08-29T10:05:13.547478+00:00",
+  "source_format": "CLUENER JSONL; Train/Dev use inclusive [start,end] spans; Test is unlabeled",
+  "output_format": "JSON list with half-open [start_idx,end_idx) character spans",
+  "entity_types": [
+    "address",
+    "book",
+    "company",
+    "game",
+    "government",
+    "movie",
+    "name",
+    "organization",
+    "position",
+    "scene"
+  ],
+  "surface_policy": "text_slice_is_authoritative_label_key_is_audit_only",
+  "duplicate_text_policy": "preserve_official_rows_and_report_conflicts",
+  "source_file_sha256": {
+    "train": "60299d202779dc84f3c3bd81f4dc08f5323d0dbf762cb50cd62dd51aa9a871f8",
+    "dev": "90036b59832e007c45d11eafe5ed80549f58a18a29aaa7fe8b1229622c69ec38",
+    "test": "5ca36f6fbe29230a6e3244110fcd9487fc2f5a672f5bfeba82a30f0ece72aa69"
+  },
+  "output_file_sha256": {
+    "train": "3c38de6e6f264df9490dedc4561f371982948c771c551dd1cf975eeefa5af78b",
+    "dev": "2bee1be249cd3d947da64b206e006f80c85a1cd5294b32e04f1437fc87d7f361",
+    "test": "d5fe9e60a52a50175ac28ffc6062b3b23a76b2d52ab5bf88556ac2917a67f115"
+  },
+  "split_stats": {
+    "train": {
+      "nested_pairs": 2,
+      "crossing_pairs": 0,
+      "rows_with_nesting": 1,
+      "rows_with_crossing_overlap": 0,
+      "rows_without_entities": 0,
+      "duplicate_text_extra_rows": 0,
+      "duplicate_text_groups": 0,
+      "duplicate_text_inconsistent_label_groups": 0,
+      "rows": 10748,
+      "entities": 23971,
+      "unique_source_record_ids": 10748,
+      "entity_type_counts": {
+        "address": 2891,
+        "book": 1139,
+        "company": 2980,
+        "game": 2376,
+        "government": 1835,
+        "movie": 1123,
+        "name": 3755,
+        "organization": 3210,
+        "position": 3141,
+        "scene": 1521
+      },
+      "minimum_text_length": 2,
+      "maximum_text_length": 50
+    },
+    "dev": {
+      "nested_pairs": 0,
+      "crossing_pairs": 0,
+      "rows_with_nesting": 0,
+      "rows_with_crossing_overlap": 0,
+      "rows_without_entities": 0,
+      "duplicate_text_extra_rows": 0,
+      "duplicate_text_groups": 0,
+      "duplicate_text_inconsistent_label_groups": 0,
+      "rows": 1343,
+      "entities": 3072,
+      "unique_source_record_ids": 1343,
+      "entity_type_counts": {
+        "address": 373,
+        "book": 154,
+        "company": 378,
+        "game": 295,
+        "government": 247,
+        "movie": 151,
+        "name": 465,
+        "organization": 367,
+        "position": 433,
+        "scene": 209
+      },
+      "minimum_text_length": 2,
+      "maximum_text_length": 50
+    },
+    "test": {
+      "nested_pairs": 0,
+      "crossing_pairs": 0,
+      "rows_with_nesting": 0,
+      "rows_with_crossing_overlap": 0,
+      "rows_without_entities": 1345,
+      "duplicate_text_extra_rows": 0,
+      "duplicate_text_groups": 0,
+      "duplicate_text_inconsistent_label_groups": 0,
+      "rows": 1345,
+      "entities": 0,
+      "unique_source_record_ids": 1345,
+      "entity_type_counts": {},
+      "minimum_text_length": 6,
+      "maximum_text_length": 50
+    }
+  },
+  "split_exact_text_overlap": {
+    "train_dev_exact_text_overlap": 0,
+    "train_test_exact_text_overlap": 0,
+    "dev_test_exact_text_overlap": 0
+  }
+}
